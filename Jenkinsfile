@@ -9,7 +9,7 @@ pipeline {
         stage('Clone') {
             steps {
                 echo '📥 Cloning repository...'
-                git 'https://github.com/panthangiEshwary/python-jenkins.git'
+                 git branch: 'main', url: 'https://github.com/panthangiEshwary/python-jenkins.git'
             }
         }
 
